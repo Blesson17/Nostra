@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A small independent shop for well-made clothes, useful accessories, and things that make home feel more like yours.">
+  <title>Nostra — A little shop for good things</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,500,20,1;0,9..144,600,20,1;1,9..144,500,20,1&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="announcement">Free shipping over $100 — a nice little perk from us to you.</div>
+  <header class="site-header">
+    <a class="wordmark" href="#home" aria-label="Nostra home">nostra<span>.</span></a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a class="active" href="#home">Home</a>
+      <a href="#collections">Collections</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="header-link" href="#collections">Shop the collection <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">A small shop for everyday things</p>
+        <h1>The pieces you<br>reach for <em>again.</em></h1>
+        <p class="hero-description">A shirt that works on Monday. A mug that makes Tuesday better. We pick things we’d happily keep ourselves.</p>
+        <a class="button button-dark" href="#collections">Take a look around <span aria-hidden="true">→</span></a>
+        <div class="hero-note"><span class="note-star" aria-hidden="true">✳</span> Picked slowly. Packed with care.</div>
+      </div>
+      <div class="hero-image-wrap">
+        <img class="hero-image" src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1500&q=85" alt="A thoughtfully styled selection of neutral clothing">
+        <div class="image-caption"><span>A FEW THINGS WE LOVE</span><span>THE NOSTRA SHOP</span></div>
+        <div class="hero-sticker">Good<br>finds!</div>
+      </div>
+    </section>
+
+    <section class="benefit-strip" aria-label="Our promises">
+      <div><span class="benefit-icon">✳</span><span>Useful, lovely things</span></div>
+      <div><span class="benefit-icon">♧</span><span>A small, changing edit</span></div>
+      <div><span class="benefit-icon">♡</span><span>Questions? Just ask us.</span></div>
+    </section>
+
+    <section class="section-block category-section">
+      <div class="section-heading">
+        <div><p class="eyebrow">A few corners of the shop</p><h2>What are you after?</h2></div>
+        <a class="text-link" href="#collections">Browse all eight <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="category-grid">
+        <a class="category-card" href="#collections" data-category-link="clothing">
+          <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=80" alt="Timeless clothing on a clothing rack">
+          <span class="category-overlay"><span>01 / GET DRESSED</span><strong>Clothes to live in.</strong><span class="circle-arrow">↗</span></span>
+        </a>
+        <a class="category-card" href="#collections" data-category-link="accessories">
+          <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=80" alt="Minimal everyday watch">
+          <span class="category-overlay"><span>02 / LITTLE EXTRAS</span><strong>The everyday carry.</strong><span class="circle-arrow">↗</span></span>
+        </a>
+        <a class="category-card" href="#collections" data-category-link="home">
+          <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=80" alt="Warm, natural home interior">
+          <span class="category-overlay"><span>03 / AT HOME</span><strong>Make yourself comfy.</strong><span class="circle-arrow">↗</span></span>
+        </a>
+      </div>
+    </section>
+
+    <section class="editorial-banner">
+      <div class="editorial-image">
+        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1500&q=85" alt="Sunlight falling across a considered boutique">
+      </div>
+      <div class="editorial-copy">
+        <p class="eyebrow">A note from our little shop</p>
+        <h2>We like things<br>with a bit of <em>character.</em></h2>
+        <p>Not everything needs replacing. We look for the things that earn their spot: a good fit, a pleasing shape, a detail that makes you smile. That’s what makes it onto our shelves.</p>
+        <a class="button button-outline" href="#collections">See what’s on our shelves <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <section id="collections">
+      <div class="collection-intro">
+        <p class="eyebrow">A browse around the shop</p>
+        <h1>Things we<br>think you’ll <em>love.</em></h1>
+        <p>Eight things on our shelves right now. Have a look, and see what catches your eye.</p>
+      </div>
+      <section class="collection-content" aria-label="Shop all products">
+        <div class="collection-toolbar">
+          <div class="collection-count" aria-live="polite"><span id="result-count">8</span> things in the shop</div>
+          <div class="collection-controls">
+            <label class="search-field">
+              <span class="sr-only">Search products</span>
+              <span aria-hidden="true">⌕</span>
+              <input id="product-search" type="search" placeholder="Try “mug” or “shirt”..." autocomplete="off">
+            </label>
+            <label class="select-field">
+              <span class="sr-only">Filter by category</span>
+              <select id="category-filter">
+                <option value="all">All categories</option>
+                <option value="clothing">Clothing</option>
+                <option value="accessories">Accessories</option>
+                <option value="home">Home</option>
+              </select>
+            </label>
+          </div>
+        </div>
+        <div class="product-grid" id="product-grid">
+          <article class="product-card" data-category="clothing" data-name="Linen day shirt" data-price="78">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=900&q=80" alt="Relaxed neutral linen shirt">
+              <span class="product-tag">A NOSTRA FAVORITE</span>
+            </div>
+            <div class="product-info"><div><h2>Linen Day Shirt</h2><p>For warm days and rolled sleeves.</p></div><span>$78</span></div>
+          </article>
+          <article class="product-card" data-category="accessories" data-name="The everyday tote" data-price="54">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=900&q=80" alt="Everyday canvas tote bag">
+              <span class="product-tag">MADE TO GO PLACES</span>
+            </div>
+            <div class="product-info"><div><h2>The Everyday Tote</h2><p>Room for the market and then some.</p></div><span>$54</span></div>
+          </article>
+          <article class="product-card" data-category="home" data-name="Sunday stoneware mug" data-price="32">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?auto=format&fit=crop&w=900&q=80" alt="Handmade stoneware coffee mug">
+              <span class="product-tag">SMALL-BATCH</span>
+            </div>
+            <div class="product-info"><div><h2>Sunday Stoneware Mug</h2><p>A good weight in your hands.</p></div><span>$32</span></div>
+          </article>
+          <article class="product-card" data-category="accessories" data-name="Everywhere watch" data-price="120">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=900&q=80" alt="Minimal wristwatch with a classic strap">
+              <span class="product-tag">A DAILY CLASSIC</span>
+            </div>
+            <div class="product-info"><div><h2>Everywhere Watch</h2><p>Simple, dependable, just right.</p></div><span>$120</span></div>
+          </article>
+          <article class="product-card" data-category="clothing" data-name="Sunday knit" data-price="96">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=900&q=80" alt="Soft neutral knit sweater">
+              <span class="product-tag">SOFT AS SUNDAY</span>
+            </div>
+            <div class="product-info"><div><h2>Sunday Knit</h2><p>For cold mornings and late starts.</p></div><span>$96</span></div>
+          </article>
+          <article class="product-card" data-category="home" data-name="Soft light candle" data-price="38">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=900&q=80" alt="A candle for a calm evening">
+              <span class="product-tag">POURED WITH CARE</span>
+            </div>
+            <div class="product-info"><div><h2>Soft Light Candle</h2><p>Light it when the day is done.</p></div><span>$38</span></div>
+          </article>
+          <article class="product-card" data-category="accessories" data-name="Weekend leather wallet" data-price="68">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&w=900&q=80" alt="Minimal leather wallet">
+              <span class="product-tag">THE LITTLE ESSENTIAL</span>
+            </div>
+            <div class="product-info"><div><h2>Weekend Leather Wallet</h2><p>Broken-in feel, from day one.</p></div><span>$68</span></div>
+          </article>
+          <article class="product-card" data-category="home" data-name="Still life vase" data-price="46">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1578500494198-246f612d3b3d?auto=format&fit=crop&w=900&q=80" alt="Sculptural ceramic vase">
+              <span class="product-tag">ONE OF A KIND</span>
+            </div>
+            <div class="product-info"><div><h2>Still Life Vase</h2><p>Looks lovely with or without flowers.</p></div><span>$46</span></div>
+          </article>
+        </div>
+        <p class="empty-state" id="empty-state" hidden>Nothing by that name in the shop. Try another search?</p>
+      </section>
+      <section class="collection-note"><span aria-hidden="true">✳</span><p>Not sure about something? We’re real people, and we’re happy to help you decide.</p></section>
+    </section>
+
+    <section class="newsletter section-block">
+      <p class="eyebrow">Not sure about something?</p>
+      <h2>We’re happy to help.</h2>
+      <p>Need a measurement, a second opinion, or just want to say hi? There’s a person behind this shop, and they’d love to hear from you.</p>
+      <a class="button button-dark" href="#contact">Talk to us <span aria-hidden="true">→</span></a>
+    </section>
+
+    <section id="contact">
+      <section class="contact-hero">
+        <div>
+          <p class="eyebrow">There’s a person behind this shop</p>
+          <h1>What’s on<br><em>your mind?</em></h1>
+          <p>Wondering about sizing, an order, or whether that mug fits in your cupboard? Send us a note. We’re glad to help.</p>
+          <div class="contact-details">
+            <div><span class="eyebrow">SAY IT IN AN EMAIL</span><a href="mailto:hello@nostra.example">hello@nostra.example</a></div>
+            <div><span class="eyebrow">OUR USUAL HOURS</span><p>Monday–Friday, 9am–5pm</p></div>
+          </div>
+        </div>
+        <div class="contact-image">
+          <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1100&q=85" alt="A bright, calm workspace">
+          <span>Here when you need us.</span>
+        </div>
+      </section>
+      <section class="contact-form-section">
+        <div class="form-intro"><p class="eyebrow">Drop us a line</p><h2>We’ll get<br>back to you.</h2><p>Tell us what you need and we’ll do our best to help.</p></div>
+        <form class="contact-form" id="contact-form">
+          <div class="form-row">
+            <label for="contact-name">Your name<input id="contact-name" name="name" type="text" placeholder="How should we call you?" required></label>
+            <label for="contact-email">Email address<input id="contact-email" name="email" type="email" placeholder="you@example.com" required></label>
+          </div>
+          <label for="contact-subject">What’s this about?
+            <select id="contact-subject" name="subject" required>
+              <option value="" disabled selected>Choose a topic</option>
+              <option>Order question</option>
+              <option>Product question</option>
+              <option>Returns and exchanges</option>
+              <option>Just saying hello</option>
+            </select>
+          </label>
+          <label for="contact-message">Your message<textarea id="contact-message" name="message" rows="5" placeholder="Tell us a little more..." required></textarea></label>
+          <button class="button button-dark" type="submit">Send your note <span aria-hidden="true">→</span></button>
+          <p class="form-message" id="form-message" aria-live="polite"></p>
+        </form>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="wordmark footer-wordmark" href="#home">nostra<span>.</span></a>
+    <p>A little shop for things you’ll use and love.</p>
+    <div class="footer-links"><a href="#collections">Collections</a><a href="#contact">Contact</a><span>© <span data-year></span> Nostra</span></div>
+  </footer>
+</body>
+</html>
